@@ -1,0 +1,31 @@
+                                                                                  ASSIGNMENT-5
+
+1) Write a query that will give you all orders for more than rs. 1000
+    SELECT * FROM ORDERS
+    WHERE AMT>1000;
+
+2) Write a query that will give you the names and cities of all salespeople in london with a commission above .10
+     SELECT SNAME, CITY
+     FROM SALESPEOPLE
+     WHERE CITY = 'LONDON' AND COMM> .10;
+
+3) Write a query on the customers table whose output will exclude all customers with a rating<= 100 unless they are located in rome.
+       SELECT * FROM CUSTOMERS
+       WHERE RATING >100 OR CITY ='ROME' ;
+4) OUTPUT:-
+
+    SELECT * FROM ORDERS
+         WHERE (AMT < 1000  OR
+               NOT (ODATE = '1990-10-03'
+                          AND CNUM > 2003));
+
+5)  SELECT * FROM ORDERS
+               WHERE NOT ((ODATE = '1990-10-03' OR SNUM
+                       >1006)  AND AMT >= 1500);
+
+6) SELECT * FROM SALESPEOPLE;
+
+      
+
+
+     
