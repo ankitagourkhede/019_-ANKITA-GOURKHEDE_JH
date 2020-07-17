@@ -1,0 +1,9 @@
+1) Which field of the customers table is the primary key?  SNUM
+
+2) What is the 4th column of the customers table?  :- Ratings
+
+3)  What is the another word for row? for column? :- tuples,  attributes
+
+4) why isn't it possible to see the first five rows of a table?
+when we UPDATE a row,if the row length is increasing,then the entire row mayb be moved to some other address.
+later, when we SELECT from the table, the row will be at some other position. 

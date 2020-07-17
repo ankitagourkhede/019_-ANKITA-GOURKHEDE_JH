@@ -1,0 +1,6 @@
+Does ANSI recognize the data type DATE? 
+
+Date complies with the ANSI SQL standard definition for the Gregorian calendar: "NOTE 85 - Datetime data types will allow dates in the Gregorian format to be stored in the date range 0001-01-01 CE through 9999-12-31 CE."
+
+Which subdivision of SQL is used to insert values in tables?
+To insert data into table you can use normal INSERT command.
