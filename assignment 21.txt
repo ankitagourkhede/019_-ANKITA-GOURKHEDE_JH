@@ -1,0 +1,44 @@
+                                    ASSIGNMENT 21
+
+ 1. Give amit the right to change the rating of the customers
+
+
+     select *from customers;
+   
+      grant update on customers to amit;
+ 
+ 
+ 2.Give manoj the right to give other user the right to query the orders table
+
+    
+grant select on orders to manoj with  GRANT OPTION;
+
+
+ 3.Take the INSERT privilege on Salespeople away from Ajita.
+ 
+
+    Revoke insert on salespeople from ajita;
+ 
+
+ 4. Grant Abhijeet the right to insert or update the Customers table while keeping her possible rating values in the range of 100 to 500.
+
+
+     CREATE OR REPLACE VIEW range100 AS
+     SELECT * FROM customers
+WHERE rating BETWEEN 100 AND 500 WITH CHECK OPTION;
+
+
+
+ 5) Allow Vikram to query the Customers table, but restrict his access to those customers whose rating is the lowest.
+
+
+CREATE OR REPLACE VIEW restrictmin AS
+
+SELECT *
+FROM customers
+WHERE rating NOT IN
+    (SELECT min(rating)
+     FROM customers);
+
+create or replace view restrictmin as
+ select *from customers where rating not in (select min(rating) from customers);
